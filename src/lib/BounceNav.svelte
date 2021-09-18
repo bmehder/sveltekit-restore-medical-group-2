@@ -7,11 +7,6 @@
   const toggleNav = () => (isNavOpen = !isNavOpen)
 </script>
 
-<svelte:head>
-  <link rel="preload" as="image" href="https://source.unsplash.com/random" />
-  <link rel="preload" as="image" href="/logo.svg" />
-</svelte:head>
-
 <svelte:window on:keydown={event => event.key === 'Escape' && toggleNav()} />
 
 <div>
