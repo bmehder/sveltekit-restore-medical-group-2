@@ -31,7 +31,7 @@
 <main>
   <Section boxed>
     <img
-      class="no-shadow"
+      style="width: 100%;"
       src="/images/header-restore-medical-group.jpg"
       alt="Header - Restore Medical Group"
     />
@@ -167,10 +167,6 @@
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
-  }
-  img {
-    width: 100%;
-    height: 100%;
   }
   h3 {
     margin-bottom: 1.5rem;
