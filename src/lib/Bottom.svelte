@@ -3,7 +3,7 @@
   import Flex from './Flex.svelte'
 </script>
 
-<Section padding="2rem 0" background="#333">
+<Section padding="4rem 0 3rem" background="#333">
   <h4>We offer multiple locations for in-clinic treatments.</h4>
   <div>
     <p>

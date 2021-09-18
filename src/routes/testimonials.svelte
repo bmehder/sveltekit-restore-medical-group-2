@@ -23,42 +23,52 @@
   </script>
 </svelte:head>
 
-<Section background="white" padding="0.5em 2em" boxed>
-  <h3 style="text-align:center;">Testimonials</h3>
-  <div style="padding:56.25% 0 0 0;position:relative;">
+<Section background="white" padding="2em" boxed>
+  <h3>Testimonials</h3>
+  <div>
     <iframe
       src="https://player.vimeo.com/video/540318619?title=0&byline=0&portrait=0"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen
       title="Restore Osteo Testimonial Video"
     />
   </div>
-  <p style="padding: 2em;">
+  <p>
     Richard has wounds on both legs. In this video, he talks about his
     experience at Restore Medical Group, and we share some before and after
     pictures.
   </p>
 </Section>
 
-<Section background="white" boxed>
-  <div style="display:grid;place-items:center;">
+<Section background="white" padding="0 2em 4em" boxed>
+  <div>
     <iframe
       src="https://player.vimeo.com/video/575120253"
-      width="640"
-      height="564"
       frameborder="0"
-      allow="autoplay; fullscreen"
-      title="Harold's Story"
+      allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen
+      title="Harold's Story"
     />
   </div>
 </Section>
 
 <style>
-  iframe {
-    margin: auto;
+  h3 {
     text-align: center;
+  }
+  div {
+    padding-top: 56.25%;
+    position: relative;
+  }
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  p {
+    padding: 2em;
   }
 </style>

@@ -6,7 +6,7 @@
   const doParallaxAction = element => {
     let y = window.innerHeight - element.getBoundingClientRect().top
 
-    element.style.transform = `translateY(${speed * (y * 1.5)}px)`
+    element.style.transform = `translateY(${speed * y}px)`
 
     return {
       update(newScrollY) {

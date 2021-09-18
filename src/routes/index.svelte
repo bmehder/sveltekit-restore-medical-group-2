@@ -4,6 +4,7 @@
   import Flex from '$lib/Flex.svelte'
   import Button from '$lib/Button.svelte'
   import CTA from '$lib/CTA.svelte'
+  import Parallax from '$lib/Parallax.svelte'
 </script>
 
 <svelte:head>
@@ -36,7 +37,7 @@
     />
   </Section>
 
-  <Section background="white" padding="2em 2em 0" boxed>
+  <Section background="white" margin="-5px auto 0" padding="2em 2em 0" boxed>
     <h3>Welcome to a revolution in chronic wound care.</h3>
     <Grid columns="1fr 1fr" gap="2em">
       <article>
@@ -64,6 +65,7 @@
       </article>
       <figure>
         <img
+          class="styled"
           src="/images/wound-care-restore-medical-group.jpg"
           alt="Wound Care - Restore Medical Group"
         />
@@ -131,7 +133,7 @@
       </blockquote>
       <p>Check out the testimonials from previous patients.</p>
       <Button
-        background="#79a10a"
+        background="dodgerblue"
         url="/testimonials"
         color="white"
         rounded
@@ -144,25 +146,34 @@
   <Section
     boxed
     background="url(images/snow.jpg) center center/cover"
-    height="400px"
+    height="500px"
   >
-    <Flex align="center" gap="2em">
-      <CTA
-        heading="We travel to you!"
-        subtitle="To schedule an on-site patient evaluation appointment, please call (720) 678-9868."
-        href="tel:7206789868"
-        buttonText="Call Today!"
-        src="/images/transportation-restore-medical-group.jpg"
-      />
-    </Flex>
+    <Parallax speed="0.1">
+      <Flex align="start" gap="2em">
+        <CTA
+          heading="We travel to you!"
+          subtitle="To schedule an on-site patient evaluation appointment, please call (720) 678-9868."
+          href="tel:7206789868"
+          buttonText="Call Today!"
+          src="/images/transportation-restore-medical-group.jpg"
+        />
+      </Flex>
+    </Parallax>
   </Section>
 </main>
 
 <style>
+  .styled {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  }
   img {
     width: 100%;
+    height: 100%;
   }
   h3 {
+    margin-bottom: 1.5rem;
     text-align: center;
   }
   hr {
