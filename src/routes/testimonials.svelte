@@ -55,6 +55,19 @@
   </div>
 </Section>
 
+<Section background="white" padding="0 2em 4em" boxed>
+  <div>
+    <iframe
+      title="vimeo-player"
+      src="https://player.vimeo.com/video/622656173?h=f802c0f0f3"
+      width="640"
+      height="360"
+      frameborder="0"
+      allowfullscreen
+    />
+  </div>
+</Section>
+
 <style>
   h3 {
     text-align: center;
