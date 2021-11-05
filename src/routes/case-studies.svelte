@@ -2,8 +2,8 @@
   import Grid from '$lib/Grid.svelte'
   import Section from '$lib/Section.svelte'
 
-  let isBlur = true
-  const unblur = () => (isBlur = false)
+  // let isBlur = true
+  // const unblur = () => (isBlur = false)
 </script>
 
 <svelte:head>
@@ -26,16 +26,12 @@
 <Section boxed background="white" padding="0.5em 2em 4em">
   <h3 style="text-align:center;">Case Studies</h3>
   <p>Click on the images to unblur them.</p>
-  <div on:click={unblur}>
+  <div>
     <Grid columns="1fr 1fr" gap="2em">
       <div>
         <h5 class="before-after">Before</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/patient-1-left-leg-before.jpg"
-            alt="before"
-          />
+          <img src="/images/patient-1-left-leg-before.jpg" alt="before" />
           <aside>
             Patient M. left leg after 5 years of treatment with traditional
             methods.
@@ -45,11 +41,7 @@
       <div>
         <h5 class="before-after">After</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/patient-1-left-leg-after.jpg"
-            alt="after"
-          />
+          <img src="/images/patient-1-left-leg-after.jpg" alt="after" />
           <aside>
             Patient M. left leg after 21 days with Restore Medical Group.
           </aside>
@@ -60,11 +52,7 @@
       <div>
         <h5 class="before-after">Before</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/patient-1-right-leg-before.jpg"
-            alt="before"
-          />
+          <img src="/images/patient-1-right-leg-before.jpg" alt="before" />
           <aside>
             Patient M. right leg after 5 years of treatment with traditional
             methods.
@@ -74,11 +62,7 @@
       <div>
         <h5 class="before-after">After</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/patient-1-right-leg-after.jpg"
-            alt="after"
-          />
+          <img src="/images/patient-1-right-leg-after.jpg" alt="after" />
           <aside>
             Patient M. right leg after 21 days with Restore Medical Group.
           </aside>
@@ -89,7 +73,7 @@
       <div>
         <h5 class="before-after">Before</h5>
         <div>
-          <img class:blur={isBlur} src="/images/image4.jpg" alt="before" />
+          <img src="/images/image4.jpg" alt="before" />
           <aside>
             6.5CM wide persistent wound unable to be healed with traditional
             treatments.
@@ -99,7 +83,7 @@
       <div>
         <h5 class="before-after">After</h5>
         <div>
-          <img class:blur={isBlur} src="/images/image9.jpg" alt="after" />
+          <img src="/images/image9.jpg" alt="after" />
           <aside>
             After 7 weeks of treatment using Restore’s Wound Care Protocol.
           </aside>
@@ -145,11 +129,7 @@
       <div>
         <h5 class="before-after">Top</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/maxine/maxine-3-24-top.jpg"
-            alt="maxine 3-24 top"
-          />
+          <img src="/images/maxine/maxine-3-24-top.jpg" alt="maxine 3-24 top" />
           <aside>
             3-24-2021. Top wound following 2 1/2 years of traditional wound
             treatment. Open wound, no skin coverage. Day One with Restore
@@ -160,11 +140,7 @@
       <div>
         <h5 class="before-after">Top</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/maxine/maxine-5-17-top.jpg"
-            alt="maxine 5-17 top"
-          />
+          <img src="/images/maxine/maxine-5-17-top.jpg" alt="maxine 5-17 top" />
           <aside>
             5-17-2021. Top wound following first treatment plan with Restore.
             Skin completely covering wound.
@@ -174,11 +150,7 @@
       <div>
         <h5 class="before-after">Top</h5>
         <div>
-          <img
-            class:blur={isBlur}
-            src="/images/maxine/maxine-6-18-top.jpg"
-            alt="maxine 6-18 top"
-          />
+          <img src="/images/maxine/maxine-6-18-top.jpg" alt="maxine 6-18 top" />
           <aside>
             6-18-2021. Top wound showing continued healing and shrinkage.
           </aside>
@@ -190,7 +162,6 @@
         <h5 class="before-after">Side</h5>
         <div>
           <img
-            class:blur={isBlur}
             src="/images/maxine/maxine-3-24-side.jpg"
             alt="maxine 3-24 side"
           />
@@ -205,7 +176,6 @@
         <h5 class="before-after">Side</h5>
         <div>
           <img
-            class:blur={isBlur}
             src="/images/maxine/maxine-5-17-side.jpg"
             alt="maxine 5-17 side"
           />
@@ -219,7 +189,6 @@
         <h5 class="before-after">Side</h5>
         <div>
           <img
-            class:blur={isBlur}
             src="/images/maxine/maxine-6-16-side.jpg"
             alt="maxine 6-16 side"
           />
@@ -257,7 +226,7 @@
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
-  .blur {
+  /* .blur {
     filter: blur(10px);
-  }
+  } */
 </style>
