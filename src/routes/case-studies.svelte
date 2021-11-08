@@ -25,7 +25,7 @@
 
 <Section boxed background="white" padding="0.5em 2em 4em">
   <h3 style="text-align:center;">Case Studies</h3>
-  <p>Click on the images to unblur them.</p>
+  <!-- <p>Click on the images to unblur them.</p> -->
   <div>
     <Grid columns="1fr 1fr" gap="2em">
       <div>
