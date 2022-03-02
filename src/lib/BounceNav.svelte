@@ -11,10 +11,7 @@
 
 <div>
   {#if isNavOpen}
-    <nav
-      in:slide={{ delay: 100, duration: 1000, easing: bounceOut }}
-      out:slide={{ duration: 500 }}
-    >
+    <nav in:slide={{ delay: 100, duration: 1000, easing: bounceOut }} out:slide={{ duration: 500 }}>
       <div>
         <a on:click|self={toggleNav} href="/"
           ><img
@@ -27,11 +24,11 @@
       </div>
       <div>
         <a on:click={toggleNav} href="/">Home</a>
-        <a on:click={toggleNav} href="/patients">Patients</a>
-        <a on:click={toggleNav} href="/providers">Providers</a>
-        <a on:click={toggleNav} href="/case-studies">Case Studies</a>
-        <a on:click={toggleNav} href="/testimonials">Testimonials</a>
-        <a on:click={toggleNav} href="/contact">Contact</a>
+        <a on:click={toggleNav} href="/patients/">Patients</a>
+        <a on:click={toggleNav} href="/providers/">Providers</a>
+        <a on:click={toggleNav} href="/case-studies/">Case Studies</a>
+        <a on:click={toggleNav} href="/testimonials/">Testimonials</a>
+        <a on:click={toggleNav} href="/contact/">Contact</a>
       </div>
     </nav>
   {:else}

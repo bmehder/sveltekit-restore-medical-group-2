@@ -203,9 +203,9 @@
 </Section>
 
 <style>
-  p {
+  /* p {
     text-align: center;
-  }
+  } */
   h5 {
     font-size: 150%;
     text-align: center;
