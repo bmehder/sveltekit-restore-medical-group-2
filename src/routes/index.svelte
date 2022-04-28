@@ -30,7 +30,7 @@
   <Section boxed>
     <img
       style="width: 100%;"
-      src="/images/header-restore-medical-group.jpg"
+      src="/images/restore-medical-group-hero.jpg"
       alt="Header - Restore Medical Group"
     />
   </Section>
