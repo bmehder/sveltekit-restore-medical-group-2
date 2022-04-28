@@ -10,9 +10,7 @@
 
 <footer style="height:{height};background:{background};color:{color};">
   <div>
-    <p>
-      ©2021 Restore Medical Group is a DBA of Restore Osteo of Colorado, LLC
-    </p>
+    <p>©2021 Restore Medical Group is a DBA of Restore Wound Care, LLC</p>
     <p on:click={scrollToTop}>
       Back to Top <i class="fa fa-arrow-up" aria-hidden="true" />
     </p>
